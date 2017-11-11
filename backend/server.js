@@ -7,10 +7,6 @@ var mongoose = require('mongoose');
 var app = express();
 var User = require('./models/User.js');
 
-var posts = [
-    { message: 'hello'},
-    { message: 'hi'}
-]
 app.use(cors());
 app.use(bodyParser.json());
 app.get('/posts',(req,res) => {
